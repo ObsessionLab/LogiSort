@@ -1,0 +1,46 @@
+﻿<UserControl x:Class="LogiSort.Pages.HomeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:local="clr-namespace:LogiSort.Pages"
+             mc:Ignorable="d" 
+             Background="{DynamicResource MaterialDesignPaper}">
+    <Grid Margin="20">
+        <Grid.LayoutTransform>
+            <!--масштаб -->
+            <ScaleTransform ScaleX="{Binding SelectedScale}" ScaleY="{Binding SelectedScale}" />
+        </Grid.LayoutTransform>
+
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="400">
+
+            <TextBlock Text="Media Sorter" 
+                       FontSize="36" 
+                       FontWeight="Bold" 
+                       HorizontalAlignment="Center" 
+                       Foreground="{DynamicResource PrimaryHueMidBrush}"
+                       Margin="0,0,0,20"/>
+
+            <TextBlock Text="{Binding LanguageService.HomeWelcome_text}"
+                       FontSize="14"
+                       TextWrapping="Wrap"
+                       Foreground="Gray"
+                       TextAlignment="Center"
+                       Margin="0,0,0,20"/>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Content="{Binding LanguageService.HomeScan_folder}" 
+                        Style="{StaticResource MaterialDesignRaisedButton}" 
+                        Command="{Binding ScanFolderCommand}"
+                        Margin="0,0,10,0"/>
+
+                <Button Content="{Binding LanguageService.HomeSort}" 
+                        Style="{StaticResource MaterialDesignRaisedButton}" 
+                        Command="{Binding SortCommand}"/>
+            </StackPanel>
+
+             
+        </StackPanel>
+    </Grid>
+</UserControl>

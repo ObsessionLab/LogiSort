@@ -1,0 +1,94 @@
+﻿<UserControl x:Class="LogiSort.Pages.GalleryPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:LogiSort.Pages"
+             mc:Ignorable="d" 
+              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+               Background="{DynamicResource MaterialDesignPaper}">
+
+    <ScrollViewer Padding="16">
+
+        <WrapPanel Orientation="Horizontal">
+            <!--Все переделать-->
+            <Border  Width="150" Height="150" Margin="8"
+                    Background="{DynamicResource MaterialDesignCardBackground}"
+                    CornerRadius="8"
+                     >
+                <Grid>
+                    <Image Source="pack://application:,,,/Plug/Plug1.png" Stretch="UniformToFill"/>
+                </Grid>
+            </Border>
+            <Border  Width="150" Height="150" Margin="8" Background="{DynamicResource MaterialDesignCardBackground}" CornerRadius="8">
+                <Grid>
+                    <Image Source="pack://application:,,,/Plug/Plug1.png" Stretch="UniformToFill"/>
+                </Grid>
+            </Border>
+            <Border Width="150" Height="150" Margin="8" Background="{DynamicResource MaterialDesignCardBackground}" CornerRadius="8">
+                <Grid>
+                    <Image Source="pack://application:,,,/Plug/Plug1.png" Stretch="UniformToFill"/>
+                </Grid>
+            </Border>
+            <Border Width="150" Height="150" Margin="8" Background="{DynamicResource MaterialDesignCardBackground}" CornerRadius="8">
+                <Grid>
+                    <Image Source="pack://application:,,,/Plug/Plug1.png" Stretch="UniformToFill"/>
+                </Grid>
+            </Border>
+            <Border Width="150" Height="150" Margin="8" Background="{DynamicResource MaterialDesignCardBackground}" CornerRadius="8">
+                <Grid>
+                    <Image Source="pack://application:,,,/Plug/Plug1.png" Stretch="UniformToFill"/>
+                </Grid>
+            </Border>
+            <Border Width="150" Height="150" Margin="8" Background="{DynamicResource MaterialDesignCardBackground}" CornerRadius="8">
+                <Grid>
+                    <Image Source="pack://application:,,,/Plug/Plug1.png" Stretch="UniformToFill"/>
+                </Grid>
+            </Border>
+            <Border Width="150" Height="150" Margin="8" Background="{DynamicResource MaterialDesignCardBackground}" CornerRadius="8">
+                <Grid>
+                    <Image Source="pack://application:,,,/Plug/Plug1.png" Stretch="UniformToFill"/>
+                </Grid>
+            </Border>
+            <Border Width="150" Height="150" Margin="8" Background="{DynamicResource MaterialDesignCardBackground}" CornerRadius="8">
+                <Grid>
+                    <Image Source="pack://application:,,,/Plug/Plug1.png" Stretch="UniformToFill"/>
+                </Grid>
+            </Border>
+            <!-- Пример видео -->
+            <Border Width="150" Height="150" Margin="8"
+                    Background="{DynamicResource MaterialDesignCardBackground}"
+                    CornerRadius="8"
+                     >
+                <Grid>
+                    <Image Source="pack://application:,,,/Plug/Plug1.png" Stretch="UniformToFill"/>
+                    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <materialDesign:PackIcon Kind="PlayCircle" Width="48" Height="48"
+                                                 Foreground="White" />
+                    </StackPanel>
+                </Grid>
+            </Border>
+            <Border Width="150" Height="150" Margin="8"
+                    Background="{DynamicResource MaterialDesignCardBackground}"
+                    CornerRadius="8"
+                     >
+                <Grid>
+                    <Image Source="pack://application:,,,/Plug/Plug1.png" Stretch="UniformToFill"/>
+                </Grid>
+            </Border>
+            <Border Width="150" Height="150" Margin="8"
+                    Background="{DynamicResource MaterialDesignCardBackground}"
+                    CornerRadius="8"
+                     >
+                <Grid>
+                    <Image Source="pack://application:,,,/Plug/Plug1.png" Stretch="UniformToFill"/>
+                    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <materialDesign:PackIcon Kind="PlayCircle" Width="48" Height="48"
+                                                 Foreground="White" />
+                    </StackPanel>
+                </Grid>
+            </Border>
+
+        </WrapPanel>
+    </ScrollViewer>
+</UserControl>

@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="MainButtonSettings_1" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="Main_page_String_0" xml:space="preserve">
+    <value>Main</value>
+  </data>
+  <data name="Page_Title_Settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="SettAutomatic_updates" xml:space="preserve">
+    <value>Automatic updates</value>
+  </data>
+  <data name="SettChange_of_topic" xml:space="preserve">
+    <value>Change of topic</value>
+  </data>
+  <data name="SettCheck_for_updates" xml:space="preserve">
+    <value>Check for updates</value>
+  </data>
+  <data name="SettEnable_logging" xml:space="preserve">
+    <value>Enable logging</value>
+  </data>
+  <data name="SettFont" xml:space="preserve">
+    <value>Scale</value>
+  </data>
+  <data name="SettingsLanguage" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="SettingsLanguagechange" xml:space="preserve">
+    <value>Language change</value>
+  </data>
+  <data name="SettLogging" xml:space="preserve">
+    <value>Logging</value>
+  </data>
+  <data name="SettNotifications" xml:space="preserve">
+    <value>Notifications</value>
+  </data>
+  <data name="SettSound" xml:space="preserve">
+    <value>Sound</value>
+  </data>
+  <data name="SettTopic" xml:space="preserve">
+    <value>Topic</value>
+  </data>
+  <data name="SettUpdates" xml:space="preserve">
+    <value>Updates</value>
+  </data>
+  <data name="SettVisual" xml:space="preserve">
+    <value>Visual</value>
+  </data>
+  <data name="SettOpen_log" xml:space="preserve">
+    <value>Open log</value>
+  </data>
+  <data name="SettCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="SettSave" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="SettReset_settings" xml:space="preserve">
+    <value>Reset settings</value>
+  </data>
+  <data name="HomeScan_folder" xml:space="preserve">
+    <value>Scan folder</value>
+  </data>
+  <data name="HomeSort" xml:space="preserve">
+    <value>Sort</value>
+  </data>
+  <data name="HomeWelcome_text" xml:space="preserve">
+    <value>Program for sorting videos and photos into folders.
+</value>
+  </data>
+  <data name="dark_theme" xml:space="preserve">
+    <value>Dark theme</value>
+  </data>
+  <data name="light_theme" xml:space="preserve">
+    <value>Light theme</value>
+  </data>
+</root>

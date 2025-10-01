@@ -1,0 +1,132 @@
+﻿<Window x:Class="LogiSort.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:LogiSort"
+        mc:Ignorable="d"
+        MinHeight="700" MinWidth="1140"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        Background="{x:Null}"
+        AllowsTransparency="True"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        MouseLeftButtonDown="Window_MouseLeftButtonDown">
+    <!--Начало-->
+    <materialDesign:Card Background="{DynamicResource MaterialDesignPaper}" UniformCornerRadius="15" Margin="5">
+        <materialDesign:Card.Effect>
+            <DropShadowEffect Direction="320" ShadowDepth="{Binding ShadowDepth}" Opacity="0.5" BlurRadius="5"/>
+        </materialDesign:Card.Effect>
+        <Grid>
+            <!--\Разметка страницы -->
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="190"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <!--Масштаб всего содержимого-->
+            <Grid.LayoutTransform>
+                <ScaleTransform 
+                    ScaleX="{Binding SelectedScale}"
+                    ScaleY="{Binding SelectedScale}" 
+                />
+            </Grid.LayoutTransform>
+            <!-- ============ БЛОК:Левая панель============= -->
+            <!-- Левая панель кнопак -->
+            <materialDesign:ColorZone Grid.Column="0"  VerticalAlignment="Stretch"  CornerRadius="15 0 0 15" Background="{DynamicResource MaterialDesignCardBackground}">
+                <StackPanel Margin="15">
+                    <WrapPanel Margin="0 10 5 60" HorizontalAlignment="Center">
+                        <Image RenderOptions.BitmapScalingMode="HighQuality"
+                               Width="24"  Height="24"
+                               VerticalAlignment="Center"/>
+                        <TextBlock x:Name="ProfileButtonText"
+                                   Text="LogiSort"
+                                    FontSize="20" FontWeight="Bold"
+                                   VerticalAlignment="Center"
+                                   Margin="10,0,0,0"/>
+                    </WrapPanel>
+                    <!--Главная страница-->
+                    <Button Style="{StaticResource MaterialDesignFlatButton}"
+                            Foreground="{DynamicResource PrimaryHueLightForegroundBrush}"
+                            materialDesign:ButtonAssist.CornerRadius="6"
+                            Height="35" Margin="0 0 0 15"
+                            Command="{Binding Commands.NavigateHomeCommand}"
+                            Cursor="Hand">
+                        <WrapPanel Width="120">
+                            <materialDesign:PackIcon  Kind="Home" VerticalAlignment="Center" Margin="0 0 20 0"/>
+                            <TextBlock Text="{Binding LanguageService.MainPageString0}"/>
+                        </WrapPanel>
+                    </Button>
+                    <!--Кнопка на (Файлы Под вопросом)-->
+                    <Button Style="{StaticResource MaterialDesignFlatButton}"
+                            Foreground="{DynamicResource PrimaryHueLightForegroundBrush}"
+                            materialDesign:ButtonAssist.CornerRadius="6"  Height="35"  Margin="0 0 0 15"
+                            Command="{Binding Commands.GalleryCommand}"
+                              Cursor="Hand">
+                        <WrapPanel Width="120">
+                            <materialDesign:PackIcon Kind="Folder" VerticalAlignment="Center" Margin="0 0 20 0"/>
+                            <TextBlock Text="{Binding LanguageService.MainPageString0}"/>
+                        </WrapPanel>
+                    </Button>
+                    <!--Кнопка настроик-->
+                    <Button Style="{StaticResource MaterialDesignFlatButton}"
+                            Foreground="{DynamicResource PrimaryHueLightForegroundBrush}"
+                            materialDesign:ButtonAssist.CornerRadius="6"
+                            Height="35" Margin="0 0 0 15"
+                            Command="{Binding Commands.NavigateSettingsCommand}"
+                            Cursor="Hand">
+                        <WrapPanel Width="120">
+                            <materialDesign:PackIcon Kind="Settings" VerticalAlignment="Center" Margin="0 0 20 0"/>
+                            <TextBlock Text="{ Binding LanguageService.MainButtonSettings1}"/>
+                        </WrapPanel>
+                    </Button>
+                </StackPanel>
+            </materialDesign:ColorZone>
+            <!---->
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <!-- Верхняяпанель -->
+                    <RowDefinition  Height="*"/>
+                    <!--Контент-->
+                </Grid.RowDefinitions>
+
+                <!-- Верхняя панель -->
+                <DockPanel Background="{DynamicResource PrimaryHueDarkBrush}"
+                           Height="40"
+                           LastChildFill="False"  Cursor="Cross">
+
+                    <!--Кнопка закрыть-->
+                    <Button Style="{StaticResource MaterialDesignToolForegroundButton}"
+                            Height="40" Width="40" 
+                            materialDesign:ButtonAssist.CornerRadius="6"
+                            Command="{Binding Commands.CloseCommand}" DockPanel.Dock="Right">
+                        <materialDesign:PackIcon  Kind="Close"/>
+                    </Button>
+                    <!--Кнопка Переключить размер-->
+                    <Button Style="{StaticResource MaterialDesignToolForegroundButton}"
+                            Height="40"  Width="40"
+                            materialDesign:ButtonAssist.CornerRadius="6"
+                            Command="{Binding Commands.ToggleSizeCommand}" DockPanel.Dock="Right">
+                        <materialDesign:PackIcon Kind="WindowMaximize"/>
+                    </Button>
+                    <Button Style="{StaticResource MaterialDesignToolForegroundButton}"  Height="40" Width="40" 
+                            materialDesign:ButtonAssist.CornerRadius="6" 
+                            Command="{ Binding Commands.CommandHidesProgram}" 
+                            DockPanel.Dock="Right" Cursor="Hand">
+                        <materialDesign:PackIcon Kind="Minus"/>
+                    </Button>
+                    <!--Кнопка о программе(Не реализовано) -->
+                    <Button Style="{StaticResource MaterialDesignToolForegroundButton}" 
+                            Height="40" Width="40"   materialDesign:ButtonAssist.CornerRadius="6" 
+                             Command="{Binding Commands.MoveWindowCommand}"  DockPanel.Dock="Right">
+                        <materialDesign:PackIcon Kind="Help"/>
+                    </Button>
+                </DockPanel>
+                <!-- Главный контент -->
+                <ContentControl Grid.Row="1"  Background="{DynamicResource MaterialDesignPaper}"  Content="{Binding CurrentView}"/>
+            </Grid>
+        </Grid>
+    </materialDesign:Card>
+</Window>
